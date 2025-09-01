@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suvrat Portfolio|Web Dev</title>
+  <meta name="description" content="Portfolio of Your Name — Frontend Developer & Designer creating clean, human-centered web experiences." />
+  <meta name="theme-color" content="#0f172a" />
+  <meta property="og:title" content="Your Name — Portfolio" />
+  <meta property="og:description" content="Frontend Developer & Designer creating clean, human-centered web experiences." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">◆</span>
+        <span class="brand-text">Suvrat Savran</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <nav id="primary-nav" class="nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle theme">
+              <svg class="icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                <path d="M21.64 13a9 9 0 1 1-10.63-10.6 1 1 0 0 1 1.09 1.47A7 7 0 1 0 20.17 12a1 1 0 0 1 1.47-1.09z"/>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="home" class="section hero" aria-label="Intro">
+      <div class="container grid-2">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Frontend Developer • Designer</p>
+          <h1>Building thoughtful web experiences that feel effortless.</h1>
+          <p class="lead">
+            I craft fast, accessible, and resilient interfaces with a focus on clarity and care.
+          </p>
+          <div class="cta">
+            <a href="#projects" class="btn btn-primary">View work</a>
+            <a href="#contact" class="btn btn-outline">Get in touch</a>
+          </div>
+          <ul class="meta">
+            <li><span>📍</span> Ghaziabad, India</li>
+            <li><span>💼</span> Open to opportunities</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal delay-1" aria-hidden="true">
+          <div class="profile-ring">
+            <!-- Replace src with your photo -->
+            <img src="assets/profile.jpg" alt="" />
+          </div>
+          <div class="badges">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">React</span>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down" aria-label="Scroll to about">Scroll</a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section" aria-label="About me">
+      <div class="container narrow">
+        <h2 class="section-title reveal">About me</h2>
+        <p class="reveal">
+          I’m a developer who loves turning complex problems into simple, beautiful interfaces.
+          I care about the details—performance, accessibility, and the human on the other side of the screen.
+        </p>
+        <p class="reveal">
+          Outside of code, I obsess over typography and long walks with podcasts. If a product helps someone feel
+          seen and supported, I’m in.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section" aria-label="Skills">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>Core</h3>
+            <ul>
+              <li>Semantic HTML</li>
+              <li>Modern CSS (Flex, Grid)</li>
+              <li>JavaScript </li>
+              <li>Accessibility </li>
+            </ul>
+          </div>
+          <div class="skill-card reveal delay-1">
+            <h3>Frameworks</h3>
+            <ul>
+              <li>React</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal delay-2">
+            <h3>Tools</h3>
+            <ul>
+              <li>Git & GitHub</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal delay-3">
+            <h3>Soft skills</h3>
+            <ul>
+              <li>Communication</li>
+              <li>Ownership</li>
+              <li>Mentorship</li>
+              <li>Problem solving</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section" aria-label="Projects">
+      <div class="container">
+        <h2 class="section-title reveal">Selected projects</h2>
+
+        <div class="projects-grid">
+          <!-- Project card -->
+          <article class="project-card reveal">
+            <div class="project-media">
+              <!-- Replace with your image -->
+              <img src="assets/project-1.jpg" alt="Dashboard web app showing analytics cards and charts" />
+            </div>
+            <div class="project-body">
+              <h3>Insight Dashboard</h3>
+              <p>Analytics dashboard with responsive cards, dark mode, and real-time filters.</p>
+              <ul class="tags">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Chart.js</li>
+              </ul>
+              <div class="actions">
+                <a class="btn btn-sm" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn btn-sm btn-outline" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1">
+            <div class="project-media">
+              <img src="assets/project-2.jpg" alt="Landing page with bold typography and call-to-action" />
+            </div>
+            <div class="project-body">
+              <h3>Landing System</h3>
+              <p>Component library for blazing-fast marketing sites with accessible UI primitives.</p>
+              <ul class="tags">
+                <li>Next.js</li>
+                <li>Tailwind</li>
+                <li>ARIA</li>
+              </ul>
+              <div class="actions">
+                <a class="btn btn-sm" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn btn-sm btn-outline" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-2">
+            <div class="project-media">
+              <img src="assets\image.jpg" alt="Mobile app screens with clean UI" />
+            </div>
+            <div class="project-body">
+              <h3>Focus Tracker</h3>
+              <p>Minimalist productivity app with offline support and synced devices.</p>
+              <ul class="tags">
+                <li>PWA</li>
+                <li>IndexedDB</li>
+                <li>Service Worker</li>
+              </ul>
+              <div class="actions">
+                <a class="btn btn-sm" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn btn-sm btn-outline" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section" aria-label="Contact">
+      <div class="container narrow">
+        <h2 class="section-title reveal">Let’s build something</h2>
+        <p class="reveal">
+          Tell me about the problem you’re trying to solve. I’ll reach back with ideas and next steps.
+        </p>
+        <form class="contact-form reveal" name="contact" netlify>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+      <ul class="social">
+        <li><a href="#" aria-label="GitHub">GitHub</a></li>
+        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="#" aria-label="Twitter">Twitter</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
